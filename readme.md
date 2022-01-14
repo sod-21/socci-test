@@ -11,7 +11,7 @@ please check the iBookshelf.php
 
 SELECT COUNT(posts.id) as total_number FROM posts LEFT JOIN users on posts.id = users.id WHERE users.email = 'test@gmail.com' and posts.created_at BETWEEN NOW() - INTERVAL 30 DAY AND NOW();
 
-INDEX ( created_at, user_id );
+INDEX ( user_id, created_at );
 
 ###javascript
 
