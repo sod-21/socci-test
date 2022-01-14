@@ -1,3 +1,12 @@
+###javascript
+
+https://codepen.io/sod-21/pen/abLPqEZ
+
+
+###php
+
+please check the iBookshelf.php
+
 ###mysql
 
 SELECT COUNT(posts.id) as total_number FROM posts LEFT JOIN users on posts.id = users.id WHERE users.email = 'test@gmail.com' and posts.created_at BETWEEN NOW() - INTERVAL 30 DAY AND NOW();
